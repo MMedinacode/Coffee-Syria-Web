@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffee Syria — cafetería árabe en Rancagua</title>
+<meta name="description" content="Coffee Syria, San Martín 514 local 3, Rancagua. Café árabe con cardamomo, dulces árabes, shawarma, pastelería y sándwiches. Carta completa con 73 precios reales.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0C1614">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230C1614'/%3E%3Cpath d='M32 9l5.5 9.5L48 16l-2.5 10.5L55 32l-9.5 5.5L48 48l-10.5-2.5L32 55l-5.5-9.5L16 48l2.5-10.5L9 32l9.5-5.5L16 16l10.5 2.5z' fill='none' stroke='%23C6A063' stroke-width='2.4' stroke-linejoin='round'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Georgia,serif' font-size='19' fill='%23C6A063'%3ECS%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Coffee Syria">
+<meta property="og:title" content="Coffee Syria — café árabe con cardamomo, en Rancagua">
+<meta property="og:description" content="La cafetería árabe de Rancagua: café con cardamomo, baklava y dulces árabes, shawarma y pastelería. San Martín 514, local 3.">
+<meta property="og:url" content="https://mmedinacode.github.io/Coffee-Syria-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/Coffee-Syria-Web/fotos/dallah-bandeja.jpg">
+<meta property="og:image:alt" content="Cafeteras de bronce para café árabe sobre una bandeja grabada, en Coffee Syria">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Amiri, Cairo y Reem Kufi: las tres son familias de doble alfabeto
+     (latino + árabe), así que el español y el árabe de esta página se
+     escriben con la MISMA voz tipográfica. Ninguna estaba usada en el
+     portafolio (verificado por grep sobre los 65 index.html). -->
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&family=Reem+Kufi:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader: la estrella de ocho puntas grabada en sus bandejas de bronce,
+     dibujándose sola. -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-in">
+    <svg class="loader-star" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 6l9 17.5L78 18l-5.5 19L90 50l-17.5 9L78 78l-19-5.5L50 94l-9-17.5L22 82l5.5-19L10 50l17.5-9L22 22l19 5.5z"/>
+    </svg>
+    <p class="loader-txt">Coffee Syria</p>
+    <p class="loader-ar" lang="ar" dir="rtl">قهوة سوريا</p>
+  </div>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="Coffee Syria, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><path d="M50 6l9 17.5L78 18l-5.5 19L90 50l-17.5 9L78 78l-19-5.5L50 94l-9-17.5L22 82l5.5-19L10 50l17.5-9L22 22l19 5.5z"/></svg>
+      </span>
+      <span class="brand-txt"><strong>Coffee Syria</strong><em>Cafetería árabe · Rancagua</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero-bg">
+    <div class="hero">
+      <div class="hero-txt">
+        <p class="eyebrow">San Martín 514, local 3 · Rancagua</p>
+        <h1>Café árabe<br>con <em>cardamomo</em>.</h1>
+        <p class="hero-ar" lang="ar" dir="rtl">أهلاً وسهلاً</p>
+        <p class="hero-lead">
+          Dulces árabes hechos acá, shawarma, pastelería y sándwiches de pan
+          ciabatta con salsa de ajo y cilantro. En pleno centro,
+          <strong>con aire acondicionado y wifi</strong>.
+        </p>
+
+        <ul class="sellos" aria-label="Lo que hay">
+          <li>Café árabe</li>
+          <li>Dulces árabes</li>
+          <li>Shawarma</li>
+          <li>Pastelería</li>
+          <li>Sándwiches</li>
+          <li>Té</li>
+        </ul>
+
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta</a>
+          <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
+        </div>
+        <p class="hero-open">
+          <span class="dot" id="statusDot" aria-hidden="true"></span>
+          <span data-horario-estado>Lunes a viernes de 09:00 a 21:00</span>
+        </p>
+      </div>
+      <figure class="hero-img">
+        <img src="fotos/dallah-bandeja.jpg" alt="Cafeteras de bronce para café árabe sobre una bandeja grabada" fetchpriority="high" decoding="async">
+        <figcaption class="hero-cap">Las dallah de bronce de su barra</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal stagger">
+      <div><b data-contar>73</b><span>productos con precio</span></div>
+      <div><b data-contar>31</b><span>reseñas en Google</span></div>
+      <div><b>09:00</b><span>abrimos</span></div>
+      <div><b data-contar>2</b><span>apps de delivery</span></div>
+    </div>
+
+    <div class="tri reveal stagger">
+      <article class="tri-card">
+        <h3>El café con cardamomo</h3>
+        <p>“El café estilo árabe <strong>con cardamomo, de lo mejor</strong>.”
+           Lo escribió un Local Guide con 123 reseñas.</p>
+        <a href="#resenas" data-tab="resenas" class="lnk">Leer reseñas →</a>
+      </article>
+      <article class="tri-card">
+        <h3>21 dulces árabes distintos</h3>
+        <p>Baklava de pistacho, ceregli, pulseras, nidos de almendra, rollos
+           de castaña. <strong>Todos con precio publicado.</strong></p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Música siria, a pedido</h3>
+        <p>“Buen lugar, buena comida, <strong>buena música siria (a
+           pedido)</strong>.” De una reseña de hace tres semanas.</p>
+        <a href="#nosotros" data-tab="nosotros" class="lnk">Conocer el local →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Un pedazo de Siria<br>en San Martín</h2>
+      <p class="sec-lead">
+        Con caligrafía dorada en la pared y las cafeteras de bronce a la vista.
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/caligrafia.jpg" alt="Caligrafía árabe dorada sobre la pared de madera del local" loading="lazy" decoding="async">
+        <figcaption>La caligrafía de la pared</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Madera, bronce y letras de oro</h3>
+        <p>
+          Las paredes son de listón de madera oscura, y en dos de ellas hay
+          <strong>caligrafía árabe en dorado</strong>. Al fondo, un póster de
+          una ciudad siria. Sobre la barra, las <em>dallah</em> —las cafeteras
+          de bronce de pico largo— sobre una bandeja grabada con la estrella
+          de ocho puntas que también da forma al logo de esta página.
+        </p>
+        <p>
+          Las mesas son de mármol negro. Y en la estantería conviven los
+          siropes 1883 con el <strong>té turco Çaykur y Tiryaki</strong> y una
+          tetera de Ahmad Tea. Google lo resume en dos palabras en su ficha:
+          <em>“buen café”</em> y <em>“muy buena selección de té”</em>.
+        </p>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/shawarma.jpg" alt="Shawarma envuelto en pan árabe con su salsa de ajo y cilantro" loading="lazy" decoding="async">
+        <figcaption>Shawarma de pollo, carne o mixto</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>El shawarma llegó porque lo pidieron</h3>
+        <blockquote class="cita">
+          “Ustedes lo pedían, y nosotros les hemos cumplido.”
+          <cite>Coffee Syria, anunciando el shawarma en su Instagram</cite>
+        </blockquote>
+        <p>
+          Hace un par de meses un cliente escribió en Google que acá
+          <em>“no hacen shawarma”</em>. <strong>Ya no es cierto</strong>: hay
+          de pollo, de carne y mixto, a $8.990, y las tres últimas reseñas
+          —las tres de hace tres semanas— lo mencionan.
+        </p>
+        <p>
+          Es exactamente el tipo de cosa que una ficha de Google no alcanza a
+          contar y una página sí.
+        </p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver toda la carta →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal stagger">
+      <figure><img src="fotos/dallah-barra.jpg" alt="Cafeteras de bronce alineadas en la barra" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/vitrina-dulces.jpg" alt="Vitrina con dulces árabes y baklava" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/mural-logo.jpg" alt="Pared negra con el logo iluminado de Coffee Syria" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/te-turco.jpg" alt="Estantería con tés turcos Çaykur y Tiryaki" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/salon.jpg" alt="Salón con sillas azules y blancas y un póster de una ciudad siria" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/tetera.jpg" alt="Tetera de Ahmad Tea sobre la barra" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/caligrafia-2.jpg" alt="La otra pared con caligrafía árabe dorada" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/siropes.jpg" alt="Botellas de sirope 1883 en la estantería" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps y de su Instagram.</p>
+
+    <!--
+      ⚠️ FOTOS DESCARTADAS POR PRIVACIDAD (regla del proyecto).
+      De las 65 fotos bajadas de su ficha se descartaron 8 en las que salen
+      personas reconocibles: un grupo de 5 hombres en una mesa, dos hombres
+      posando en la puerta, una clienta sosteniendo una taza de bronce (cara
+      y manos nítidas), dos mujeres conversando y alguien grabando con el
+      teléfono. La más bonita de todas era la BARISTA preparando el café
+      árabe en la estación de bronce: se le ve el perfil con total claridad.
+      No se publica ninguna sin permiso.
+    -->
+    <div class="aviso reveal">
+      <strong>Nota honesta:</strong> la mejor foto de todo su archivo es la de
+      la barista preparando el café árabe entre las cafeteras de bronce. No
+      está acá porque se le ve la cara y no le hemos preguntado.
+      <b>Con su permiso, esa foto es la portada de esta página.</b>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>73 productos,<br>73 precios reales</h2>
+      <p class="sec-lead">
+        Tal como los publica su propia carta en Google, el 15-09-2026.
+      </p>
+    </header>
+
+    <!--
+      ⚠️ GANCHO DE VENTA VERIFICADO EL 15-09-2026.
+      La carta de Google (la que alimenta el botón "Pedir en línea") trae 73
+      productos. Su tienda de Uber Eats trae 14, sin una sola cafetería, y
+      con 5 precios más baratos que los de Google:
+        Sándwich JQLM      Google $9.990 · Uber Eats $7.990
+        Sándwich de Atún   Google $9.990 · Uber Eats $8.990
+        Ave y Mayo         Google $9.990 · Uber Eats $7.990
+        Ave Pimentón       Google $8.990 · Uber Eats $6.990
+        Torta Crocante     Google $6.990 · Uber Eats $5.990
+      Además Uber Eats anuncia 9:30–20:00 y su ficha de Google 9:00–21:00.
+      En esta página van SIEMPRE los precios de su carta de Google, que es
+      la más completa y la más nueva.
+    -->
+    <div class="aviso reveal">
+      <strong>Sobre los precios:</strong> son los de su carta publicada en
+      Google, consultada el 15-09-2026. <b>Su menú de Uber Eats muestra otros
+      valores y sólo 14 de estos 73 productos</b> — la comparación está más
+      abajo. Conviene confirmar en el local.
+    </div>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Cafetería árabe</h3>
+        <span class="carta-bloque-n">3 · lo que no hay en otra parte</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/cafe-arabe.jpg" alt="Café árabe servido en taza" loading="lazy" decoding="async">
+          <div><h4>Café árabe grande</h4><p>El de cardamomo. El que nombran las reseñas.</p></div>
+          <span class="price">$5.990</span></article>
+        <article class="menu-item">
+          <div><h4>Café árabe mediano</h4><p>Mismo café, taza mediana.</p></div>
+          <span class="price">$5.490</span></article>
+        <article class="menu-item">
+          <img src="fotos/tetera.jpg" alt="Tetera de té" loading="lazy" decoding="async">
+          <div><h4>Té árabe grande</h4><p>Su ficha de Google destaca “muy buena selección de té”.</p></div>
+          <span class="price">$2.490</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Café preparado</h3>
+        <span class="carta-bloque-n">18 · mediano $4.490 · grande $4.990</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/hero-capuchino.jpg" alt="Capuchino con arte en la espuma" loading="lazy" decoding="async">
+          <div><h4>Cappuccino tradicional grande</h4><p>Doble carga de espresso, leche vaporizada y espuma.</p></div>
+          <span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino tradicional mediano</h4><p>Una carga de espresso, equilibrado.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Cappuccino vainilla grande</h4><p>Con un suave toque de vainilla.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino vainilla mediano</h4><p>Con un suave toque de vainilla.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Cappuccino canela grande</h4><p>Con un cálido toque de canela.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino canela mediano</h4><p>Con un cálido toque de canela.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Cappuccino pistacho grande</h4><p>Con un delicado toque de pistacho.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino pistacho mediano</h4><p>Con un delicado toque de pistacho.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Cappuccino almendra grande</h4><p>Con un delicado toque de almendra.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino almendra mediano</h4><p>Con un delicado toque de almendra.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Cappuccino avellana grande</h4><p>Con un suave sabor a avellana.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino avellana mediano</h4><p>Con un suave toque de avellana.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Cappuccino coco grande</h4><p>Con un suave toque de coco.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino coco mediano</h4><p>Con un suave toque de coco.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Mokaccino grande</h4><p>Doble espresso, chocolate, leche vaporizada y espuma.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Mokaccino mediano</h4><p>La combinación de café y cacao.</p></div><span class="price">$4.490</span></article>
+        <article class="menu-item"><div><h4>Café bombón grande</h4><p>Doble espresso, leche condensada y leche vaporizada.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Café bombón mediano</h4><p>Cremoso, entre el dulzor y la intensidad.</p></div><span class="price">$4.490</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Cafetería fría</h3>
+        <span class="carta-bloque-n">7 · todos a $6.990</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/ice-latte.jpg" alt="Ice latte en vaso alto sobre una mesa de mármol negro" loading="lazy" decoding="async">
+          <div><h4>Ice latte tradicional</h4><p>Café, hielo y espuma de leche fría.</p></div>
+          <span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Ice latte pistacho</h4><p>Café, hielo, syrup de pistacho y espuma de leche fría.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Ice latte bombón</h4><p>Café, hielo, leche condensada y espuma de leche fría.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Ice latte nutella</h4><p>Café, hielo, nutella y espuma de leche fría.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Ice latte manjar</h4><p>Café, hielo, salsa de manjar y espuma de leche fría.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Ice latte moka blanco coco</h4><p>Café, chocolate blanco, syrup de coco y espuma de leche fría.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Chai latte frío</h4><p>Café, hielo, syrup de the chai y espuma de leche fría.</p></div><span class="price">$6.990</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Dulces árabes</h3>
+        <span class="carta-bloque-n">21 · desde $1.290</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/baklava.jpg" alt="Bandeja de baklava con pistacho" loading="lazy" decoding="async">
+          <div><h4>Baklava doble pistacho</h4><p>Doble relleno de pistacho.</p></div>
+          <span class="price">$2.290</span></article>
+        <article class="menu-item"><div><h4>Baklava doble nuez</h4><p>Relleno con doble nuez.</p></div><span class="price">$1.790</span></article>
+        <article class="menu-item"><div><h4>Baklava cacao nuez</h4><p>Relleno de nuez.</p></div><span class="price">$1.790</span></article>
+        <article class="menu-item"><div><h4>Baklava cacao castaña</h4><p>Baklava de cacao con doble castaña.</p></div><span class="price">$1.890</span></article>
+        <article class="menu-item"><div><h4>Ceregli pistacho chocolate</h4><p>Ceregli con pistacho y chocolate.</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Ceregli tradicional</h4><p>Relleno de nuez y caramelo.</p></div><span class="price">$3.490</span></article>
+        <article class="menu-item">
+          <img src="fotos/fatayer.jpg" alt="Hojaldres y dulces árabes surtidos" loading="lazy" decoding="async">
+          <div><h4>Fatayer nutella pistacho</h4><p>Dulce fatayer relleno de nutella y pistacho.</p></div>
+          <span class="price">$2.190</span></article>
+        <article class="menu-item"><div><h4>Rollo de pistacho</h4><p>Dulce árabe en rollo relleno de pistacho.</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Rollo de castaña</h4><p>Relleno de castaña.</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Rollo de chocolate</h4><p>Relleno de chocolate.</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Rollo de coco rallado</h4><p>Relleno de coco rallado.</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Pulsera de pistacho</h4><p>Dulce árabe en forma de pulsera, con pistacho.</p></div><span class="price">$1.590</span></article>
+        <article class="menu-item"><div><h4>Pulsera de chocolate</h4><p>En forma de pulsera, con chocolate.</p></div><span class="price">$1.590</span></article>
+        <article class="menu-item"><div><h4>Flor de avellana</h4><p>Con forma de flor y avellana.</p></div><span class="price">$1.590</span></article>
+        <article class="menu-item"><div><h4>Nido de almendra</h4><p>Con forma de nido y almendra.</p></div><span class="price">$1.390</span></article>
+        <article class="menu-item"><div><h4>Dulce árabe</h4><p>El tradicional, relleno de nuez.</p></div><span class="price">$1.290</span></article>
+        <article class="menu-item"><div><h4>Dedo de frambuesa</h4><p>Relleno de frambuesa.</p></div><span class="price">$1.290</span></article>
+        <article class="menu-item"><div><h4>Dedo de manzana</h4><p>Relleno de manzana.</p></div><span class="price">$1.290</span></article>
+        <article class="menu-item">
+          <img src="fotos/vitrina-dulces.jpg" alt="Vitrina de dulces árabes" loading="lazy" decoding="async">
+          <div><h4>Caja surtida, 5 unidades</h4><p>4 dulces árabes de nuez y 1 mini ceregli.</p></div>
+          <span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Caja surtida, 8 unidades</h4><p>Ocho dulces árabes surtidos.</p></div><span class="price">$8.790</span></article>
+        <article class="menu-item"><div><h4>Caja especial cóctel, 17 unidades</h4><p>Diecisiete dulces árabes surtidos, estilo cóctel.</p></div><span class="price">$13.990</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Pastelería</h3>
+        <span class="carta-bloque-n">6 · por porción</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/torta-pistacho.jpg" alt="Torta con crocante encima" loading="lazy" decoding="async">
+          <div><h4>Cheesecake de pistacho</h4><p>Porción. El que nombra la reseña más nueva.</p></div>
+          <span class="price">$7.990</span></article>
+        <article class="menu-item">
+          <img src="fotos/cheesecake-maracuya.jpg" alt="Cheesecake con salsa de maracuyá" loading="lazy" decoding="async">
+          <div><h4>Cheesecake de maracuyá</h4><p>Porción, con salsa de maracuyá.</p></div>
+          <span class="price">$6.990</span></article>
+        <article class="menu-item">
+          <img src="fotos/torta-crocante.jpg" alt="Torta crocante de avellana" loading="lazy" decoding="async">
+          <div><h4>Torta crocante de avellana</h4><p>Porción. En Uber Eats está a $5.990.</p></div>
+          <span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Torta crocante nuez, frambuesa y manjar</h4><p>Porción de torta crocante con nuez.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Torta caluga</h4><p>Porción de torta sabor caluga.</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item">
+          <img src="fotos/donut-pistacho.jpg" alt="Donut con glaseado" loading="lazy" decoding="async">
+          <div><h4>Rollo de canela con pistacho</h4><p>Rollo de canela con glaseado de pistacho.</p></div>
+          <span class="price">$4.990</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Sándwiches</h3>
+        <span class="carta-bloque-n">10 · en ciabatta o pan de molde</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/sandwich.jpg" alt="Sándwich de pan ciabatta con su salsa" loading="lazy" decoding="async">
+          <div><h4>Sándwich JQLM</h4><p>Ciabatta, pavo ahumado, queso, tomate, mayonesa y lechuga, con aceite de oliva y sésamo.</p></div>
+          <span class="price">$9.990</span></article>
+        <article class="menu-item"><div><h4>Sándwich cremoso</h4><p>Ciabatta, pavo ahumado, queso philadelphia, tomate, palta y mayonesa.</p></div><span class="price">$9.990</span></article>
+        <article class="menu-item"><div><h4>Sándwich de mechada</h4><p>Ciabatta, carne mechada, tomate, palta y mayonesa.</p></div><span class="price">$9.990</span></article>
+        <article class="menu-item"><div><h4>Sándwich de atún</h4><p>Ciabatta o pan de molde, atún, lechuga, palta, mayonesa y tomate.</p></div><span class="price">$9.990</span></article>
+        <article class="menu-item"><div><h4>Ave palta</h4><p>Ciabatta, ave, palta y mayonesa.</p></div><span class="price">$9.990</span></article>
+        <article class="menu-item"><div><h4>Ave mayo</h4><p>Ciabatta, ave y mayonesa, con sésamo tostado.</p></div><span class="price">$9.990</span></article>
+        <article class="menu-item"><div><h4>Ave pimentón</h4><p>En pan de molde.</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Sándwich la junta</h4><p>Pan de molde, jamón, queso y mayonesa.</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item">
+          <img src="fotos/quiche.jpg" alt="Tartaletas saladas" loading="lazy" decoding="async">
+          <div><h4>Huevo con tostadas</h4><p>En pan de molde o ciabatta.</p></div>
+          <span class="price">$7.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas con palta</h4><p>En ciabatta o pan de molde.</p></div><span class="price">$7.990</span></article>
+      </div>
+      <p class="note">
+        Todos van acompañados de <b>salsa de ajo con cilantro o salsa de
+        ajo</b>, y decorados con aceite de oliva y sésamo.
+      </p>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Shawarma</h3>
+        <span class="carta-bloque-n">3 · todos a $8.990</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/shawarma.jpg" alt="Shawarma envuelto en pan árabe" loading="lazy" decoding="async">
+          <div><h4>Shawarma de pollo</h4><p>Pollo condimentado, cebolla morada, pepinillo, salsa de ajo, tomate y lechuga, en pan árabe.</p></div>
+          <span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Shawarma de carne</h4><p>Carne de vacuno condimentada, con las mismas verduras y dos salsas aparte.</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Shawarma mixto</h4><p>Pollo y carne de vacuno, en pan árabe.</p></div><span class="price">$8.990</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Pizzas</h3>
+        <span class="carta-bloque-n">3 · individuales, todas a $5.990</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Pizza pepperoni y queso</h4><p>Individual.</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Pizza jamón y queso</h4><p>Individual.</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Pizza vegetariana</h4><p>Individual, con una selección de verduras.</p></div><span class="price">$5.990</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Bebestibles</h3>
+        <span class="carta-bloque-n">2</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Cerveza árabe sin alcohol</h4><p>De frutilla o de granada.</p></div><span class="price">$3.490</span></article>
+        <article class="menu-item"><div><h4>Bebidas 591 ml</h4><p>Consultar variedad.</p></div><span class="price">$2.490</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque carta-bloque-ojo reveal">
+      <header class="carta-bloque-head">
+        <h3>Google dice una cosa, Uber Eats otra</h3>
+        <span class="carta-bloque-n">verificado el 15-09-2026</span>
+      </header>
+      <p class="cmp-lead">
+        Su tienda de Uber Eats muestra <b>14 productos de estos 73</b>, sin una
+        sola preparación de cafetería, y con <b>cinco precios distintos</b>:
+      </p>
+      <ul class="cmp">
+        <li><span>Sándwich JQLM</span><b class="cmp-a">$9.990</b><i>Google</i><b class="cmp-b">$7.990</b><i>Uber Eats</i></li>
+        <li><span>Sándwich de atún</span><b class="cmp-a">$9.990</b><i>Google</i><b class="cmp-b">$8.990</b><i>Uber Eats</i></li>
+        <li><span>Ave mayo</span><b class="cmp-a">$9.990</b><i>Google</i><b class="cmp-b">$7.990</b><i>Uber Eats</i></li>
+        <li><span>Ave pimentón</span><b class="cmp-a">$8.990</b><i>Google</i><b class="cmp-b">$6.990</b><i>Uber Eats</i></li>
+        <li><span>Torta crocante de avellana</span><b class="cmp-a">$6.990</b><i>Google</i><b class="cmp-b">$5.990</b><i>Uber Eats</i></li>
+      </ul>
+      <p class="cmp-pie">
+        Y los horarios tampoco calzan: <b>Uber Eats anuncia 9:30 a 20:00</b> y
+        su ficha de Google, <b>9:00 a 21:00</b>. Una página propia corrige las
+        dos cosas de una vez, porque es la fuente y no la copia.
+      </p>
+    </section>
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>5,0 ★ · 31 reseñas</h2>
+      <p class="sec-lead">
+        Tres de las treinta y una, copiadas textuales de su ficha de Google.
+      </p>
+    </header>
+
+    <div class="revs reveal stagger">
+      <!-- La reseña de Ralph es larga; se corta en un punto donde la frase
+           cierra y se marca con "…". Su frase sobre el shawarma quedó
+           desactualizada y se explica más abajo, no se esconde. -->
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>El local es agradable en decoración, los panes de los sándwich son bien ricos y la variedad en general está bien, el dueño siempre está por allí y atento a todo, las garzones bien y <b>el café estilo árabe con cardamomo de lo mejor</b>…</p>
+        <footer><b>Ralph Gitan</b><span>Local Guide · 123 reseñas · 18 fotos · hace 2 meses</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Siempre ha sido un agrado ir a compartir una taza de café con unos ricos pastelitos con sabor a dulzura, es un lugar acogedor, desde el momento que tú entras te reciben con tanto amor (…) cada trozo de pastel tiene una delicadeza que saborear y <b>cada café es un perfume distinto</b>.</p>
+        <footer><b>Paola correa castro</b><span>Reseña en Google · hace 5 meses</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Un lugar muy acogedor y con harta variedad. Puedes ir por un café y algo dulce o también comer un buen shawarma, <b>los precios me parecieron excelentes acordes a la calidad y las porciones</b>. Sin duda volvería.</p>
+        <footer><b>rancho latino</b><span>Reseña en Google · hace 3 semanas</span></footer>
+      </blockquote>
+    </div>
+
+    <div class="aviso reveal">
+      <strong>Lo que dice el resumen de Google:</strong> “Los comensales dicen
+      que les encanta el delicioso café de este café, incluyendo el
+      <b>café árabe con cardamomo</b>, y una variedad de sabrosos sándwiches,
+      pasteles y dulces árabes.”
+    </div>
+
+    <!--
+      ⚠️ EL AVISO DE GOOGLE Y SU CAUSA — ESTO ES EL GANCHO DE VENTA.
+      La ficha trae un recuadro de Google: "Recientemente, se quitaron
+      opiniones sospechosas con calificaciones altas de este lugar".
+      Buscando en SU PROPIO INSTAGRAM aparece la causa: un afiche suyo que
+      dice "¡Las primeras 10 personas que cumplan el reto se ganan un café!
+      Participa así de fácil: 1. Sube una foto en nuestra cafetería a tu
+      historia o feed y etiquétanos. 2. Déjanos una reseña en nuestra página
+      de Google". Premiar reseñas con un producto gratis es exactamente lo
+      que las políticas de Google prohíben y castigan borrando reseñas.
+      No es fraude: es una promoción bienintencionada que les está costando
+      caro. Se explica en la página porque es el consejo más útil que se les
+      puede dar, y porque el dato ya es público en su propia ficha.
+    -->
+    <div class="aviso aviso-ojo reveal">
+      <strong>Y algo que conviene saber:</strong> Google muestra en su ficha
+      el aviso <em>“recientemente se quitaron opiniones sospechosas con
+      calificaciones altas de este lugar”</em>. Revisando su Instagram aparece
+      por qué: el afiche de <b>“las primeras 10 personas que cumplan el reto
+      se ganan un café”</b> pide subir una historia <b>y dejar una reseña en
+      Google</b>. Regalar algo a cambio de una reseña va contra las políticas
+      de Google, y la respuesta automática es borrarlas.
+      <b>Es una promoción bienintencionada que les está costando reseñas
+      reales</b> — y tiene arreglo: se puede pedir la reseña sin premiarla.
+    </div>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJ1zYCR0RDY5YRyxxk_9WiFnY" target="_blank" rel="noopener">Leer las 31 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ1zYCR0RDY5YRyxxk_9WiFnY" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde encontrarnos</h2>
+      <p class="sec-lead">
+        Sólo lo verificado el 15-09-2026. Ningún perfil inventado.
+      </p>
+    </header>
+
+    <div class="redes">
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.instagram.com/coffee.syria_/" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-ig"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13.67.67 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.71 2.13-1.38.67-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.71-1.46-1.38-2.13C21.32 1.35 20.65.93 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.41a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></span>
+          <span class="red-card-txt">
+            <b>@coffee.syria_</b>
+            <em>16,7 mil seguidores</em>
+          </span>
+          <span class="red-card-cta">Seguir →</span>
+        </a>
+        <a class="red-grid" href="https://www.instagram.com/coffee.syria_/" target="_blank" rel="noopener"
+           data-cta="Ver en Instagram" aria-label="Abrir el Instagram de Coffee Syria">
+          <figure><img src="fotos/ig-shawarma.jpg" alt="Publicación de Coffee Syria anunciando el shawarma" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/ig-capuchino.jpg" alt="Publicación de Coffee Syria con un capuchino" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/ig-gracias.jpg" alt="Publicación de Coffee Syria agradeciendo a sus clientes" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">
+          Su bio parte por lo que más repiten las reseñas: <b>aire acondicionado</b>.
+        </p>
+      </article>
+
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Coffee%20Syria&query_place_id=ChIJ1zYCR0RDY5YRyxxk_9WiFnY" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>Ficha en Google Maps</b>
+            <em>5,0 ★ · 31 reseñas</em>
+          </span>
+          <span class="red-card-cta">Abrir →</span>
+        </a>
+        <a class="red-grid" href="https://www.google.com/maps/search/?api=1&query=Coffee%20Syria&query_place_id=ChIJ1zYCR0RDY5YRyxxk_9WiFnY" target="_blank" rel="noopener"
+           data-cta="Ver la ficha" aria-label="Abrir la ficha de Coffee Syria en Google Maps">
+          <figure><img src="fotos/baklava.jpg" alt="Bandeja de baklava" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/dallah-barra.jpg" alt="Cafeteras de bronce en la barra" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/vitrina-pasteleria.jpg" alt="Vitrina de pastelería" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">
+          Su carta de Google trae <b>los 73 productos con precio</b>.
+        </p>
+      </article>
+
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://wa.me/56988647464" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-wsp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></span>
+          <span class="red-card-txt">
+            <b>+56 9 8864 7464</b>
+            <em>El número de su ficha de Google</em>
+          </span>
+          <span class="red-card-cta">Escribir →</span>
+        </a>
+        <a class="red-grid" href="https://wa.me/56988647464" target="_blank" rel="noopener"
+           data-cta="Escribir por WhatsApp" aria-label="Escribir a Coffee Syria por WhatsApp">
+          <figure><img src="fotos/fatayer.jpg" alt="Dulces árabes surtidos" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/cheesecake-maracuya.jpg" alt="Cheesecake de maracuyá" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/cookies.jpg" alt="Galletas" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">
+          Por acá se encargan las <b>cajas de dulces árabes</b>.
+        </p>
+      </article>
+    </div>
+
+    <!-- ⚠️ NO TIENEN TIKTOK ENCONTRABLE. No se inventa ninguno. Tampoco
+         tienen Facebook con actividad. Lo único verificado es el Instagram
+         @coffee.syria_ (16,7 mil seguidores, la bio dice "San Martín 514,
+         local 3, Rancagua", que calza con la ficha). -->
+    <div class="aviso reveal">
+      <strong>Lo que no aparece acá:</strong> no se les encontró TikTok ni
+      Facebook activo, así que no se inventa ninguno. Y
+      <b>no tienen sitio web</b>: su ficha de Google sigue ofreciendo
+      “añadir sitio web” y el bloque de resultados web de Maps viene vacío.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>San Martín 514, local 3</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>San Martín 514, local 3<br>Rancagua, Región de O'Higgins</p>
+          <!-- Google sólo publica "San Martín 514". El "local 3" viene de su
+               propia bio de Instagram y de su afiche del shawarma. -->
+          <p class="sub">Plus Code R7H3+JC · el <b>local 3</b> lo dicen ellos en su Instagram</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Horario</h3>
+          <p class="estado"><span class="dot" aria-hidden="true"></span><span data-horario-estado>Lunes a viernes de 09:00 a 21:00</span></p>
+          <ul class="horario horario-semana" id="horario-lista" data-horario-semana>
+            <li data-dia="1"><span>Lunes</span><b>09:00 – 21:00</b></li>
+            <li data-dia="2"><span>Martes</span><b>09:00 – 21:00</b></li>
+            <li data-dia="3"><span>Miércoles</span><b>09:00 – 21:00</b></li>
+            <li data-dia="4"><span>Jueves</span><b>09:00 – 21:00</b></li>
+            <li data-dia="5"><span>Viernes</span><b>09:00 – 21:00</b></li>
+            <li data-dia="6"><span>Sábado</span><b>10:00 – 22:00</b></li>
+            <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
+          </ul>
+          <p class="sub">
+            <b>El sábado abren una hora más tarde y cierran una hora más
+            tarde.</b> Según su ficha de Google, consultada el 15-09-2026.
+            Su bio de Instagram sólo alcanza a decir “lunes a jueves”, y
+            Uber Eats anuncia 9:30 a 20:00.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>Contacto</h3>
+          <a class="vtel" href="https://wa.me/56988647464" target="_blank" rel="noopener">
+            <span class="vtel-ico" style="background:#25D366" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></span>
+            <span class="vtel-txt">
+              <b>+56 9 8864 7464</b>
+              <em>WhatsApp · el número de su ficha</em>
+            </span>
+            <span class="vtel-flecha" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h11v5H3v-5zm12-4h4l3 4v5h-2a2.5 2.5 0 01-5 0h-0V8zM5.5 17a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0zm11 0a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg> Entrega a domicilio</li>
+            <li class="vpedir-ext"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 110 12 6 6 0 010-12z"/></svg> Uber Eats</li>
+            <li class="vpedir-ext"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 110 12 6 6 0 010-12z"/></svg> PedidosYa</li>
+          </ul>
+          <p class="sub">
+            Los tres primeros los declara su ficha de Google. Los dos últimos
+            salen del propio panel <b>“Pedir en línea”</b> de Google, que
+            ofrece las dos plataformas.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>En el local</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v10H3V5zm0 12h18v2H3v-2zm2-9v2h6V8H5z"/></svg> Aire acondicionado</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19a1.6 1.6 0 110 3.2A1.6 1.6 0 0112 19zm0-4.6c1.5 0 2.9.6 4 1.6l-1.7 1.7a3.9 3.9 0 00-4.6 0L8 16c1.1-1 2.5-1.6 4-1.6zm0-4.6c2.8 0 5.3 1.1 7.2 2.9l-1.7 1.7A8 8 0 0012 12a8 8 0 00-5.5 2.4L4.8 12.7A10.2 10.2 0 0112 9.8zm0-4.6c4 0 7.7 1.6 10.4 4.2l-1.7 1.7A12.4 12.4 0 0012 7.4c-3.4 0-6.5 1.3-8.7 3.5L1.6 9.2A14.7 14.7 0 0112 5.2z"/></svg> Wi-Fi gratis</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v3H4V6zm0 5h16v7a1 1 0 01-1 1H5a1 1 0 01-1-1v-7zm3 3v2h5v-2H7z"/></svg> Tarjetas y pago NFC</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l2 6-8 12L4 9l2-6zm1.6 2L6.3 8.7 12 17.3l5.7-8.6L16.4 5H7.6z"/></svg> Terraza</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 9a2 2 0 110-4 2 2 0 010 4zm5-2a2 2 0 110-4 2 2 0 010 4zm5 0a2 2 0 110-4 2 2 0 010 4zm5 2a2 2 0 110-4 2 2 0 010 4zM12 10c2.8 0 6 2.6 6 5.6 0 2-1.6 3.4-3.6 3.4-1 0-1.7-.4-2.4-.4s-1.4.4-2.4.4C7.6 19 6 17.6 6 15.6 6 12.6 9.2 10 12 10z"/></svg> Perros afuera</li>
+          </ul>
+          <p class="sub">Todo declarado en la pestaña “Información” de su ficha de Google.</p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Coffee%20Syria&destination_place_id=ChIJ1zYCR0RDY5YRyxxk_9WiFnY" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-34.1709582,-70.7464506&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en pestaña display:none y no cargaría. -->
+        <iframe
+          title="Mapa de Coffee Syria en San Martín 514, Rancagua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300!2d-70.7464506!3d-34.1709582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96634344470236d7%3A0x7616a2d5ff641ccb!2sCoffee%20Syria!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <figure class="fachada reveal">
+      <img src="fotos/fachada.jpg" alt="La fachada de Coffee Syria con su letrero y las mesas de la vereda" loading="lazy" decoding="async">
+      <figcaption>El letrero dice <span lang="ar" dir="rtl">قهوة سوريا</span> — “Coffee Syria”.</figcaption>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<!-- Flotantes. Derecha = contacto (Instagram, WhatsApp, teléfono).
+     Izquierda = delivery: las dos plataformas que ofrece el panel
+     "Pedir en línea" de su ficha de Google. -->
+<div class="float float-right">
+  <a class="fab fab-ig" href="https://www.instagram.com/coffee.syria_/" target="_blank" rel="noopener"
+     data-label="@coffee.syria_" aria-label="Instagram de Coffee Syria"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13.67.67 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.71 2.13-1.38.67-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.71-1.46-1.38-2.13C21.32 1.35 20.65.93 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.41a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
+  <a class="fab fab-wsp" href="https://wa.me/56988647464" target="_blank" rel="noopener"
+     data-label="WhatsApp" aria-label="Escribir a Coffee Syria por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></a>
+  <a class="fab fab-tel" href="tel:+56988647464"
+     data-label="Llamar" aria-label="Llamar a Coffee Syria" style="background:var(--oro);color:var(--tinta)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></a>
+  <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
+    style="background:var(--tinta);color:var(--oro)"><span aria-hidden="true">↑</span></button>
+</div>
+
+<div class="float float-left">
+  <a class="fab fab-delivery fab-pedidosya"
+     href="https://www.pedidosya.cl/restaurantes/rancagua/coffee-syria-9fb49da0-0b7b-4c68-bff8-882e016e069f-menu"
+     target="_blank" rel="noopener" aria-label="Pedir por PedidosYa">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h11v5H3v-5zm12-4h4l3 4v5h-2a2.5 2.5 0 01-5 0V8zM5.5 17a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0zm11 0a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg>
+    <span>PedidosYa</span>
+  </a>
+  <a class="fab fab-delivery fab-ubereats"
+     href="https://www.ubereats.com/cl/store/coffee-syria/WgoBihOoX8ea6RWb6Vy0yA"
+     target="_blank" rel="noopener" aria-label="Pedir por Uber Eats">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h11v5H3v-5zm12-4h4l3 4v5h-2a2.5 2.5 0 01-5 0V8zM5.5 17a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0zm11 0a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg>
+    <span>Uber Eats</span>
+  </a>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">Coffee Syria</p>
+      <p class="foot-ar" lang="ar" dir="rtl">قهوة سوريا</p>
+      <p>San Martín 514, local 3 · Rancagua</p>
+      <p data-horario-resumen>Lun a Vie 09:00 – 21:00 · Sáb 10:00 – 22:00 · Dom cerrado</p>
+      <p><a href="https://wa.me/56988647464" target="_blank" rel="noopener">+56 9 8864 7464</a></p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de Coffee Syria.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps, de su
+         carta publicada en Google y de su Instagram @coffee.syria_
+         (todo verificado el 15-09-2026) para mostrarle al local cómo se
+         vería su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.HORARIO = {
+  dias: ["09:00 - 21:00","09:00 - 21:00","09:00 - 21:00","09:00 - 21:00",
+         "09:00 - 21:00","10:00 - 22:00","Cerrado"],
+  fuente: "Ficha de Google Maps, 15-09-2026"
+};
+window.REDES = {
+  instagram: {
+    user: "coffee.syria_",
+    seguidores: "16,7 mil",
+    fotos: ["fotos/ig-shawarma.jpg","fotos/ig-capuchino.jpg","fotos/ig-gracias.jpg"]
+  }
+};
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
