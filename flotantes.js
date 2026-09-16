@@ -66,8 +66,17 @@
       /* Ancho completo = cabecera, menú desplegado o cajón del carrito. */
       if (r.width > 300) continue;
 
+      /* 280 y no 180: hay sitios que anclan algún botón bastante más
+         arriba del borde (Café Crema 21 tiene su botón de teléfono a
+         212px del fondo) y con el umbral corto se quedaba suelto en
+         mitad del horario. */
       var alto = document.documentElement.clientHeight || 800;
-      if (alto - r.bottom > 180) continue;   // sólo lo pegado abajo
+      if (alto - r.bottom > 280) continue;
+
+      /* Y tiene que estar pegado a un costado. Con el umbral más alto,
+         sin esto se podría agarrar cualquier cosa fija del medio. */
+      var W = ancho() || 380;
+      if (r.left > 90 && r.right < W - 90) continue;
 
       var cls = (e.className || '').toString();
       if (/loader|burger|nav|head|drawer|panel|backdrop|overlay/i.test(cls)) continue;
@@ -90,31 +99,72 @@
 
   function marcar() {
     var f = flotantes(), i;
+
+    /* ⚠️ Hay sitios donde los botones NO están agrupados en un contenedor:
+       son varios elementos fixed sueltos (Café Crema 21 tiene cuatro). Si a
+       todos se les da el mismo `right`, se apilan uno encima de otro. Por eso
+       cada uno lleva su propio índice y se corre hacia el centro.
+       Va como variable CSS y no como estilo en línea a propósito: así el
+       desplazamiento sólo existe dentro de la media query del teléfono. */
+    var yaDer = document.querySelectorAll('.flot-der').length;
+    var yaIzq = document.querySelectorAll('.flot-izq').length;
+
     for (i = 0; i < f.length; i++) {
       var e = f[i];
       if (e.classList.contains('flot-auto')) continue;
-      e.classList.add('flot-auto');
+
       /* ¿va pegado a la izquierda o a la derecha? Se mira dónde está
          puesto de verdad, no cómo se llama la clase. */
       var r = e.getBoundingClientRect();
-      e.classList.add(r.left < ancho() / 2 ? 'flot-izq' : 'flot-der');
+      var izq = r.left < ancho() / 2;
+
+      e.classList.add('flot-auto');
+      e.classList.add(izq ? 'flot-izq' : 'flot-der');
+      e.style.setProperty('--flot-i', izq ? yaIzq++ : yaDer++);
     }
     return f.length;
   }
 
+  /* En 375px no caben botones con texto: "Pedir por Rappi" mide 175px y
+     choca con los de la otra esquina. En el teléfono se dejan como icono.
+     ⚠️ Sólo los que TIENEN icono propio (svg o img): si un botón es puro
+     texto, colapsarlo lo dejaría vacío. El aria-label no se toca, así que
+     un lector de pantalla lo sigue leyendo completo. */
+  function compactar() {
+    var b = document.querySelectorAll(
+      '.flot-auto a, .flot-auto button, a.flot-auto, button.flot-auto');
+    for (var i = 0; i < b.length; i++) {
+      if (b[i].classList.contains('flot-icono')) continue;
+      if (!b[i].querySelector('svg, img')) continue;
+      b[i].classList.add('flot-icono');
+    }
+  }
+
   function pintar() {
-    if (document.querySelector('.flot-franja')) return;
-    var f = document.createElement('div');
-    f.className = 'flot-franja';
-    f.setAttribute('aria-hidden', 'true');
-    document.body.appendChild(f);
+    /* El SEPARADOR va primero y es lo que de verdad reserva el hueco.
+       Se probó con `body{padding-bottom}` y no sirve: hay sitios donde el
+       scroll no lo lleva el body sino un contenedor interno, y ahí el
+       padding no hace nada. Un div normal en el flujo ocupa su alto
+       siempre, no importa quién scrollee. */
+    if (!document.querySelector('.flot-hueco')) {
+      var h = document.createElement('div');
+      h.className = 'flot-hueco';
+      h.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(h);
+    }
+    if (!document.querySelector('.flot-franja')) {
+      var f = document.createElement('div');
+      f.className = 'flot-franja';
+      f.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(f);
+    }
   }
 
   var estilo = document.createElement('style');
   estilo.setAttribute('data-flotantes', '');
   estilo.textContent =
     ':root{--flot-alto:' + ALTO + 'px;--flot-fondo:' + fondo() + '}' +
-    '.flot-franja{display:none}' +
+    '.flot-franja,.flot-hueco{display:none}' +
     '@media (max-width:' + MOVIL + 'px){' +
       '.flot-franja{' +
         'display:block;position:fixed;left:0;right:0;bottom:0;z-index:799;' +
@@ -130,18 +180,22 @@
         'top:auto !important;z-index:801 !important;' +
         'flex-direction:row !important;align-items:center !important;' +
       '}' +
-      '.flot-auto.flot-der{right:14px !important;left:auto !important}' +
-      '.flot-auto.flot-izq{left:14px !important;right:auto !important}' +
+      '.flot-auto.flot-der{right:calc(14px + var(--flot-i,0) * 58px) !important;left:auto !important}' +
+      '.flot-auto.flot-izq{left:calc(14px + var(--flot-i,0) * 58px) !important;right:auto !important}' +
       /* El hueco de abajo: la franja deja de taparle nada al contenido. */
+      '.flot-hueco{display:block;width:100%;flex:none;' +
+        'height:calc(var(--flot-alto) + env(safe-area-inset-bottom,0px))}' +
+      /* Refuerzo por si el separador cae dentro de algo con overflow. */
       'body{padding-bottom:calc(var(--flot-alto) + env(safe-area-inset-bottom,0px)) !important}' +
       /* Los pies que ya reservaban sitio a mano dejan de necesitarlo. */
       '.foot{padding-bottom:clamp(30px,4.5vw,50px) !important}' +
-      /* En 375px no caben cuatro círculos y dos píldoras anchas en la
-         misma franja: las de delivery pasan a ser sólo el icono. El
-         nombre de la plataforma ya lo dice el color y el propio icono,
-         y el aria-label sigue completo para quien use lector. */
-      '.fab-delivery{width:48px !important;padding:0 !important;border-radius:50% !important;' +
-        'justify-content:center !important}' +
+      /* Todos los flotantes con icono pasan a círculo en el teléfono. */
+      '.flot-icono{width:48px !important;min-width:48px !important;height:48px !important;' +
+        'padding:0 !important;border-radius:50% !important;gap:0 !important;' +
+        'display:inline-flex !important;align-items:center !important;' +
+        'justify-content:center !important;font-size:0 !important;' +
+        'overflow:hidden !important;white-space:nowrap !important}' +
+      '.flot-icono svg,.flot-icono img{width:22px !important;height:22px !important;flex:none !important}' +
       '.fab-delivery span{display:none !important}' +
       /* "Volver arriba" sobra en el teléfono: para eso está el gesto. */
       '.fab-top{display:none !important}' +
@@ -153,10 +207,12 @@
     if (!document.head.contains(estilo)) document.head.appendChild(estilo);
     pintar();
     marcar();
+    compactar();
     /* El carrito y la pestaña de redes llegan tarde: dos pasadas más. */
-    setTimeout(marcar, 900);
-    setTimeout(marcar, 2200);
-    window.addEventListener('resize', marcar, { passive: true });
+    setTimeout(function () { marcar(); compactar(); }, 900);
+    setTimeout(function () { marcar(); compactar(); }, 2200);
+    window.addEventListener('resize', function () { marcar(); compactar(); },
+                            { passive: true });
   }
 
   function seguro() {
