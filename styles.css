@@ -838,3 +838,18 @@ h1,h2,h3,h4{
    derecha. Se le reserva un poco de alto arriba SOLO a las filas que
    realmente tienen "+", para que el precio baje y no se pisen. */
 .menu-item:has(> .uc-add){padding-top:26px}
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   22-09-2026 · Aire abajo
+   Este sitio no lleva pulido.css, así que la regla va aquí. Medido: sus
+   pestañas terminaban con 0 px bajo el último elemento y la última foto
+   quedaba pegada al pie. Se agrega un bloque al final en vez de tocar el
+   padding, para no pisar el espacio que la página ya tuviera.
+   ══════════════════════════════════════════════════════════════════════ */
+.tab-panel.active::after, .tab-panel.on::after, .tab-section.active::after{
+  content:""; display:block;
+  height: var(--pl-aire-abajo, clamp(30px, 4.5vw, 56px));
+  flex-basis:100%; flex-shrink:0; grid-column:1 / -1;
+  pointer-events:none;
+}
